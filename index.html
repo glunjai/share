@@ -1,62 +1,4056 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
-  <title>My LIFF App</title>
-</head>
-<body>
-  <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
-  <script>
-    async function main() {
-      await liff.init({liffId:"1657286865-Gb6KveXO"})
-      await liff.shareTargetPicker([
-        {
-          "type": "flex",
-          "altText": "Flex Message from share Target Picker",
-          "contents": {
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>กลั่นใจให้เป็นสุข รุ่น 17</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    
+  
+  
+<div class="d-grid gap-2 d-md-block">
+  
+
+<a href="#" id="pp1" class="btn btn-primary" role="button" data-bs-toggle="button" aria-pressed="true">การ์ดแนะนำ</a>
+<a href="#" id="pp2" class="btn btn-primary" role="button" data-bs-toggle="button" aria-pressed="true">Day 1</a> 
+<a href="#" id="pp3" class="btn btn-primary" role="button" data-bs-toggle="button" aria-pressed="true">Day 2</a>   
+<a href="#" id="pp4" class="btn btn-primary" role="button" data-bs-toggle="button" aria-pressed="true">Day 3</a>
+<a href="#" id="pp5" class="btn btn-primary" role="button" data-bs-toggle="button" aria-pressed="true">Day 4</a> 
+<a href="#" id="pp6" class="btn btn-primary" role="button" data-bs-toggle="button" aria-pressed="true">Day 5</a> 
+<a href="#" id="pp7" class="btn btn-primary" role="button" data-bs-toggle="button" aria-pressed="true">Day 6</a>
+<a href="#" id="pp8" class="btn btn-primary" role="button" data-bs-toggle="button" aria-pressed="true">Day 7</a> 
+<a id="stext2" class="btn btn-primary disabled" aria-disabled="true" role="button" data-bs-toggle="button"></a>
+
+
+<a href="#" id="pp9" class="btn btn-primary" role="button" data-bs-toggle="button" aria-pressed="true">การบ้าน + รีรันDay 1</a> 
+<a href="#" id="pp10" class="btn btn-primary" role="button" data-bs-toggle="button" aria-pressed="true">การบ้าน + รีรันDay 2</a>
+<a href="#" id="pp11" class="btn btn-primary" role="button" data-bs-toggle="button" aria-pressed="true">การบ้าน + รีรันDay 3</a> 
+<a href="#" id="pp12" class="btn btn-primary" role="button" data-bs-toggle="button" aria-pressed="true">การบ้าน + รีรันDay 4</a> 
+<a href="#" id="pp13" class="btn btn-primary" role="button" data-bs-toggle="button" aria-pressed="true">การบ้าน + รีรันDay 5</a>
+<a href="#" id="pp14" class="btn btn-primary" role="button" data-bs-toggle="button" aria-pressed="true">การบ้าน + รีรันDay 6</a> 
+<a href="#" id="pp15" class="btn btn-primary" role="button" data-bs-toggle="button" aria-pressed="true">การบ้าน + รีรันDay 7</a>   
+<a id="stext" class="btn btn-primary disabled" aria-disabled="true" role="button" data-bs-toggle="button"></a>
+
+  <a href="#" id="pp16" class="btn btn-primary" role="button" data-bs-toggle="button" aria-pressed="true">รีวิวเฟซบุ๊ก</a>   
+<a id="stext3" class="btn btn-primary disabled" aria-disabled="true" role="button" data-bs-toggle="button"></a>
+</div>
+
+
+
+    <script>
+    window.onload = function(e){
+      liff.init({liffId: "1657262937-8k9ALW9p"}, function(){
+        liff.ready.then(()=>{
+          if(liff.isLoggedIn()){
+            
+           
+            var cc = document.getElementById("pp1");//การ์ดแนะนำ
+            var ba = document.getElementById("pp2");// Day 1
+            var bb = document.getElementById("pp3");// Day 2
+            var bc = document.getElementById("pp4");// Day 3
+            var bd = document.getElementById("pp5");// Day 4
+            var be = document.getElementById("pp6");// Day 5
+            var bf = document.getElementById("pp7");// Day 6
+            var bg= document.getElementById("pp8");// Day 7
+
+           var bh = document.getElementById("pp9");// การบ้าน + รีรันDay 1
+           var bi = document.getElementById("pp10");// การบ้าน + รีรันDay 2
+           var bj = document.getElementById("pp11");// การบ้าน + รีรันDay 3
+           var bk = document.getElementById("pp12");// การบ้าน + รีรันDay 4
+           var bl = document.getElementById("pp13");// การบ้าน + รีรันDay 5
+           var bm = document.getElementById("pp14");// การบ้าน + รีรันDay 6
+           var bn = document.getElementById("pp15");// การบ้าน + รีรันDay 7
+
+           var bo = document.getElementById("pp16");// รีวิวเฟซบุ๊ก
+
+
+            // รีวิวเฟซบุ๊ก -------//     
+           
+            bo.onclick = ()=> {
+              var ss = [{
+  "type": "flex",
+  "altText": "rerun & การบ้านสบายๆ",
+  "contents": {
+  "type": "carousel",
+  "contents": [
+    {
+      "type": "bubble",
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://glunjai.com/wp-content/uploads/2022/08/S__6275102.jpg",
+            "size": "full",
+            "aspectMode": "fit",
+            "aspectRatio": "4:6",
+            "gravity": "center"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "ร่วมรีวิว ส่งต่อความสุข",
+                    "size": "xl",
+                    "color": "#ffffff",
+                    "weight": "bold"
+                  }
+                ]
+              },
+              {
+                "type": "box",
+                "layout": "baseline",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "แชร์สิ่งดีๆ ที่ได้จากคอร์สใต้คอมเมนต์โพสต์นี้ ",
+                    "color": "#ebebeb",
+                    "size": "sm",
+                    "flex": 0
+                  }
+                ],
+                "spacing": "lg"
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "filler"
+                  },
+                  {
+                    "type": "box",
+                    "layout": "baseline",
+                    "contents": [
+                      {
+                        "type": "filler"
+                      },
+                      {
+                        "type": "text",
+                        "text": "คลิกรีวิว Facebook",
+                        "color": "#ffffff",
+                        "flex": 0,
+                        "offsetTop": "-2px",
+                        "action": {
+                          "type": "uri",
+                          "label": "action",
+                          "uri": "https://www.facebook.com/106479275093249/posts/pfbid027vEUif7gyDBQFYpLJuFF7Shdu2oqyDyHmQZhgQcY6mWTeWH5jDBKHFjoywcp5V8Nl/"
+                        }
+                      },
+                      {
+                        "type": "filler"
+                      }
+                    ],
+                    "spacing": "sm"
+                  },
+                  {
+                    "type": "filler"
+                  }
+                ],
+                "borderWidth": "1px",
+                "cornerRadius": "4px",
+                "spacing": "sm",
+                "borderColor": "#ffffff",
+                "margin": "xxl",
+                "height": "40px"
+              }
+            ],
+            "position": "absolute",
+            "offsetBottom": "0px",
+            "offsetStart": "0px",
+            "offsetEnd": "0px",
+            "backgroundColor": "#03303Acc",
+            "paddingAll": "20px",
+            "paddingTop": "18px"
+          }
+        ],
+        "paddingAll": "0px"
+      }
+    }
+  ]
+}
+                
+                
+              }]
+              sendMsg(ss)
+            }                        
+                
+            
+//-------รีรัน + การบ้าน Day 7 -------//     
+           
+            bn.onclick = ()=> {
+              var ss = [{
+  "type": "flex",
+  "altText": "rerun & การบ้านสบายๆ",
+  "contents": {
+  "type": "carousel",
+  "contents": [
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://glunjai.com/wp-content/uploads/2022/08/rerun-17.jpg",
+        "size": "full",
+        "aspectRatio": "20:13",
+        "aspectMode": "cover"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Rerun Youtube",
+            "weight": "bold",
+            "size": "xl",
+            "color": "#469D9D",
+            "contents": []
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "margin": "md",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "spacing": "sm",
+            "margin": "lg",
+            "contents": [
+              {
+                "type": "text",
+                "text": "✨ฟังทบทวนคอร์ส กลั่นใจให้เป็นสุข✨",
+                "weight": "regular",
+                "color": "#037B80",
+                "wrap": false,
+                "contents": []
+              },
+              {
+                "type": "text",
+                "text": "สามารถเข้าชมรีรันเวลาใดก็ได้ 💖",
+                "size": "md",
+                "margin": "xl",
+                "contents": []
+              },
+              {
+                "type": "separator",
+                "margin": "xxl"
+              },
+              {
+                "type": "text",
+                "text": "'นัตถิ สันติปะรัง สุขัง'",
+                "size": "lg",
+                "color": "#469D9D",
+                "align": "center",
+                "margin": "xxl",
+                "contents": []
+              },
+              {
+                "type": "text",
+                "text": "สุขอื่นยิ่งกว่าความสงบไม่มี",
+                "size": "md",
+                "align": "center",
+                "margin": "none",
+                "contents": []
+              }
+            ]
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "flex": 0,
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "คลิกเข้าชมรีรัน",
+              "uri": "https://share.hsforms.com/1n5JMjuvmQnSirRTxnhu20Acrziq"
+            },
+            "color": "#03989EFF",
+            "height": "md",
+            "style": "primary"
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "direction": "ltr",
+      "hero": {
+        "type": "image",
+        "url": "https://glunjai.com/wp-content/uploads/2022/08/card-line.jpg",
+        "size": "full",
+        "aspectRatio": "1.51:1",
+        "aspectMode": "cover"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "การบ้านสบายๆ ",
+                "size": "xl",
+                "align": "center",
+                "contents": []
+              },
+              {
+                "type": "spacer",
+                "size": "xxl"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+              },
+              {
+                "type": "text",
+                "text": "นั่งสมาธิอย่างน้อย 30 นาที",
+                "margin": "xxl",
+                "contents": []
+              },
+              {
+                "type": "spacer",
+                "size": "xxl"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+              },
+              {
+                "type": "text",
+                "text": "ยิ้ม 10 ครั้ง",
+                "margin": "xxl",
+                "contents": []
+              },
+              {
+                "type": "spacer",
+                "size": "xxl"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+              },
+              {
+                "type": "text",
+                "text": "พูดเพราะ 10 ครั้ง",
+                "margin": "xxl",
+                "contents": []
+              },
+              {
+                "type": "spacer",
+                "size": "xxl"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+              },
+              {
+                "type": "text",
+                "text": "ทำสบายๆ 10 ครั้ง",
+                "margin": "xxl",
+                "contents": []
+              },
+              {
+                "type": "spacer",
+                "size": "xxl"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+              },
+              {
+                "type": "text",
+                "text": "รักษาอารมณ์สบายทั้งวัน",
+                "margin": "xxl",
+                "contents": []
+              },
+              {
+                "type": "spacer",
+                "size": "xxl"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+              },
+              {
+                "type": "text",
+                "text": "นึกถึงความดีที่ได้ทำมา 5 อย่าง",
+                "margin": "xxl",
+                "contents": []
+              },
+              {
+                "type": "spacer",
+                "size": "xxl"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+              },
+              {
+                "type": "text",
+                "text": "จับดีคนรอบข้างอย่างน้อย 1 ครั้ง",
+                "margin": "xxl",
+                "contents": []
+              },
+              {
+                "type": "spacer",
+                "size": "sm"
+              }
+            ]
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "คลิกส่งการบ้านที่นี่",
+              "uri": "https://glunjai.com/?fluent-form=77"
+            },
+            "color": "#03989EFF",
+            "style": "primary"
+          }
+        ]
+      }
+    }
+  ]
+}
+                
+                
+              }]
+              sendMsg(ss)
+            }                        
+                              
+            
+//-------รีรัน + การบ้าน Day 6 -------//     
+           
+            bm.onclick = ()=> {
+              var ss = [{
+  "type": "flex",
+  "altText": "rerun & การบ้านวันที่ 6",
+  "contents": {
+  "type": "carousel",
+  "contents": [
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://glunjai.com/wp-content/uploads/2022/08/rerun-17.jpg",
+        "size": "full",
+        "aspectRatio": "20:13",
+        "aspectMode": "cover"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Rerun Youtube",
+            "weight": "bold",
+            "size": "xl",
+            "color": "#469D9D",
+            "contents": []
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "margin": "md",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "spacing": "sm",
+            "margin": "lg",
+            "contents": [
+              {
+                "type": "text",
+                "text": "✨ฟังทบทวนคอร์ส กลั่นใจให้เป็นสุข✨",
+                "weight": "regular",
+                "color": "#037B80",
+                "wrap": false,
+                "contents": []
+              },
+              {
+                "type": "text",
+                "text": "สามารถเข้าชมรีรันเวลาใดก็ได้ 💖",
+                "size": "md",
+                "margin": "xl",
+                "contents": []
+              },
+              {
+                "type": "separator",
+                "margin": "xxl"
+              },
+              {
+                "type": "text",
+                "text": "'นัตถิ สันติปะรัง สุขัง'",
+                "size": "lg",
+                "color": "#469D9D",
+                "align": "center",
+                "margin": "xxl",
+                "contents": []
+              },
+              {
+                "type": "text",
+                "text": "สุขอื่นยิ่งกว่าความสงบไม่มี",
+                "size": "md",
+                "align": "center",
+                "margin": "none",
+                "contents": []
+              }
+            ]
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "flex": 0,
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "คลิกเข้าชมรีรัน",
+              "uri": "https://share.hsforms.com/1n5JMjuvmQnSirRTxnhu20Acrziq"
+            },
+            "color": "#03989EFF",
+            "height": "md",
+            "style": "primary"
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "direction": "ltr",
+      "hero": {
+        "type": "image",
+        "url": "https://glunjai.com/6-14/",
+        "size": "full",
+        "aspectRatio": "1.51:1",
+        "aspectMode": "cover"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "การบ้านวันที่ 6",
+                "size": "xl",
+                "align": "center",
+                "contents": []
+              },
+              {
+                "type": "spacer",
+                "size": "xxl"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+              },
+              {
+                "type": "text",
+                "text": "ยิ้ม 10 ครั้ง",
+                "margin": "xxl",
+                "contents": []
+              },
+              {
+                "type": "spacer",
+                "size": "xxl"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+              },
+              {
+                "type": "text",
+                "text": "พูดเพราะ 10 ครั้ง",
+                "margin": "xxl",
+                "contents": []
+              },
+              {
+                "type": "spacer",
+                "size": "xxl"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+              },
+              {
+                "type": "text",
+                "text": "ทำสบายๆ 10 ครั้ง",
+                "margin": "xxl",
+                "contents": []
+              },
+              {
+                "type": "spacer",
+                "size": "xxl"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+              },
+              {
+                "type": "text",
+                "text": "รักษาอารมณ์สบายทั้งวัน",
+                "margin": "xxl",
+                "contents": []
+              },
+              {
+                "type": "spacer",
+                "size": "xxl"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+              },
+              {
+                "type": "text",
+                "text": "นึกถึงความดีที่ได้ทำมา 5 อย่าง",
+                "margin": "xxl",
+                "contents": []
+              },
+              {
+                "type": "spacer",
+                "size": "xxl"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "** พิมพ์ส่งการบ้านในกลุ่มไลน์",
+            "weight": "bold",
+            "size": "lg",
+            "color": "#257FA6FF",
+            "align": "center",
+            "margin": "xl",
+            "contents": []
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "หรือคลิกส่งที่นี่",
+              "uri": "https://glunjai.com/?fluent-form=87"
+            },
+            "color": "#03989EFF",
+            "style": "primary"
+          }
+        ]
+      }
+    }
+  ]
+}
+                          
+              }]
+              sendMsg(ss)
+            }                        
+                  
+            
+//-------รีรัน + การบ้าน Day 5 -------//     
+           
+            bl.onclick = ()=> {
+              var ss = [{
+  "type": "flex",
+  "altText": "rerun & การบ้านวันที่ 5",
+  "contents": {
+  "type": "carousel",
+  "contents": [
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://glunjai.com/wp-content/uploads/2022/08/rerun-17.jpg",
+        "size": "full",
+        "aspectRatio": "20:13",
+        "aspectMode": "cover"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Rerun Youtube",
+            "weight": "bold",
+            "size": "xl",
+            "color": "#469D9D",
+            "contents": []
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "margin": "md",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "spacing": "sm",
+            "margin": "lg",
+            "contents": [
+              {
+                "type": "text",
+                "text": "✨ฟังทบทวนคอร์ส กลั่นใจให้เป็นสุข✨",
+                "weight": "regular",
+                "color": "#037B80",
+                "wrap": false,
+                "contents": []
+              },
+              {
+                "type": "text",
+                "text": "สามารถเข้าชมรีรันเวลาใดก็ได้ 💖",
+                "size": "md",
+                "margin": "xl",
+                "contents": []
+              },
+              {
+                "type": "separator",
+                "margin": "xxl"
+              },
+              {
+                "type": "text",
+                "text": "'นัตถิ สันติปะรัง สุขัง'",
+                "size": "lg",
+                "color": "#469D9D",
+                "align": "center",
+                "margin": "xxl",
+                "contents": []
+              },
+              {
+                "type": "text",
+                "text": "สุขอื่นยิ่งกว่าความสงบไม่มี",
+                "size": "md",
+                "align": "center",
+                "margin": "none",
+                "contents": []
+              }
+            ]
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "flex": 0,
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "คลิกเข้าชมรีรัน",
+              "uri": "https://share.hsforms.com/1n5JMjuvmQnSirRTxnhu20Acrziq"
+            },
+            "color": "#03989EFF",
+            "height": "md",
+            "style": "primary"
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "direction": "ltr",
+      "hero": {
+        "type": "image",
+        "url": "https://glunjai.com/5-19/",
+        "size": "full",
+        "aspectRatio": "1.51:1",
+        "aspectMode": "cover"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "การบ้านวันที่ 5",
+                "size": "xl",
+                "align": "center",
+                "margin": "xxl",
+                "contents": []
+              },
+              {
+                "type": "spacer",
+                "size": "xxl"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "margin": "xxl"
+              },
+              {
+                "type": "text",
+                "text": "ยิ้ม 10 ครั้ง",
+                "margin": "xxl",
+                "contents": []
+              },
+              {
+                "type": "spacer",
+                "size": "xxl"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "margin": "xxl"
+              },
+              {
+                "type": "text",
+                "text": "พูดเพราะ 10 ครั้ง",
+                "margin": "xxl",
+                "contents": []
+              },
+              {
+                "type": "spacer",
+                "size": "xxl"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "margin": "xxl"
+              },
+              {
+                "type": "text",
+                "text": "ทำสบายๆ 10 ครั้ง",
+                "margin": "xxl",
+                "contents": []
+              },
+              {
+                "type": "spacer",
+                "size": "xxl"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "margin": "xxl"
+              },
+              {
+                "type": "text",
+                "text": "รักษาอารมณ์สบาย",
+                "margin": "xxl",
+                "contents": []
+              },
+              {
+                "type": "spacer"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "** พิมพ์ส่งการบ้านในกลุ่มไลน์",
+            "weight": "bold",
+            "size": "lg",
+            "color": "#257FA6FF",
+            "align": "center",
+            "margin": "xl",
+            "contents": []
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "หรือคลิกส่งที่นี่",
+              "uri": "https://glunjai.com/?fluent-form=86"
+            },
+            "color": "#03989EFF",
+            "style": "primary"
+          }
+        ]
+      }
+    }
+  ]
+}
+                
+                
+              }]
+              sendMsg(ss)
+            }                        
+                  
+            
+            
+//-------รีรัน + การบ้าน Day 4 -------//     
+           
+            bk.onclick = ()=> {
+              var ss = [{
+  "type": "flex",
+  "altText": "rerun & การบ้านวันที่ 4",
+  "contents": {
+  "type": "carousel",
+  "contents": [
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://glunjai.com/wp-content/uploads/2022/08/rerun-17.jpg",
+        "size": "full",
+        "aspectRatio": "20:13",
+        "aspectMode": "cover"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Rerun Youtube",
+            "weight": "bold",
+            "size": "xl",
+            "color": "#469D9D",
+            "contents": []
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "margin": "md",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "spacing": "sm",
+            "margin": "lg",
+            "contents": [
+              {
+                "type": "text",
+                "text": "✨ฟังทบทวนคอร์ส กลั่นใจให้เป็นสุข✨",
+                "weight": "regular",
+                "color": "#037B80",
+                "wrap": false,
+                "contents": []
+              },
+              {
+                "type": "text",
+                "text": "สามารถเข้าชมรีรันเวลาใดก็ได้ 💖",
+                "size": "md",
+                "margin": "xl",
+                "contents": []
+              },
+              {
+                "type": "separator",
+                "margin": "xxl"
+              },
+              {
+                "type": "text",
+                "text": "'นัตถิ สันติปะรัง สุขัง'",
+                "size": "lg",
+                "color": "#469D9D",
+                "align": "center",
+                "margin": "xxl",
+                "contents": []
+              },
+              {
+                "type": "text",
+                "text": "สุขอื่นยิ่งกว่าความสงบไม่มี",
+                "size": "md",
+                "align": "center",
+                "margin": "none",
+                "contents": []
+              }
+            ]
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "flex": 0,
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "คลิกเข้าชมรีรัน",
+              "uri": "https://share.hsforms.com/1n5JMjuvmQnSirRTxnhu20Acrziq"
+            },
+            "color": "#03989EFF",
+            "height": "md",
+            "style": "primary"
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "direction": "ltr",
+      "hero": {
+        "type": "image",
+        "url": "https://glunjai.com/3-29/",
+        "size": "full",
+        "aspectRatio": "1.51:1",
+        "aspectMode": "cover"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "การบ้านวันที่ 4",
+                "size": "xl",
+                "align": "center",
+                "contents": []
+              },
+              {
+                "type": "spacer",
+                "size": "xxl"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "margin": "xxl"
+              },
+              {
+                "type": "text",
+                "text": "ยิ้ม 10 ครั้ง",
+                "size": "lg",
+                "margin": "xxl",
+                "contents": []
+              },
+              {
+                "type": "spacer"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "margin": "xxl"
+              },
+              {
+                "type": "text",
+                "text": "พูดเพราะ 10 ครั้ง",
+                "size": "lg",
+                "margin": "xxl",
+                "contents": []
+              },
+              {
+                "type": "spacer"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "margin": "xxl"
+              },
+              {
+                "type": "text",
+                "text": "ทำสบาย ๆ 10 ครั้ง",
+                "size": "lg",
+                "margin": "xxl",
+                "contents": []
+              },
+              {
+                "type": "spacer"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "** พิมพ์ส่งการบ้านในกลุ่มไลน์",
+            "weight": "bold",
+            "size": "lg",
+            "color": "#257FA6FF",
+            "align": "center",
+            "margin": "xxl",
+            "contents": []
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "หรือคลิกส่งที่นี่",
+              "uri": "https://glunjai.com/?fluent-form=85"
+            },
+            "color": "#03989EFF",
+            "style": "primary"
+          }
+        ]
+      }
+    }
+  ]
+}
+                
+                
+              }]
+              sendMsg(ss)
+            }                        
+            
+//-------รีรัน + การบ้าน Day 3 -------//     
+           
+            bj.onclick = ()=> {
+              var ss = [{
+  "type": "flex",
+  "altText": "rerun & การบ้านวันที่ 3",
+  "contents": {
+  "type": "carousel",
+  "contents": [
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://glunjai.com/wp-content/uploads/2022/08/rerun-17.jpg",
+        "size": "full",
+        "aspectRatio": "20:13",
+        "aspectMode": "cover"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Rerun Youtube",
+            "weight": "bold",
+            "size": "xl",
+            "color": "#469D9D",
+            "contents": []
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "margin": "md",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "spacing": "sm",
+            "margin": "lg",
+            "contents": [
+              {
+                "type": "text",
+                "text": "✨ฟังทบทวนคอร์ส กลั่นใจให้เป็นสุข✨",
+                "weight": "regular",
+                "color": "#037B80",
+                "wrap": false,
+                "contents": []
+              },
+              {
+                "type": "text",
+                "text": "สามารถเข้าชมรีรันเวลาใดก็ได้ 💖",
+                "size": "md",
+                "margin": "xl",
+                "contents": []
+              },
+              {
+                "type": "separator",
+                "margin": "xxl"
+              },
+              {
+                "type": "text",
+                "text": "'นัตถิ สันติปะรัง สุขัง'",
+                "size": "lg",
+                "color": "#469D9D",
+                "align": "center",
+                "margin": "xxl",
+                "contents": []
+              },
+              {
+                "type": "text",
+                "text": "สุขอื่นยิ่งกว่าความสงบไม่มี",
+                "size": "md",
+                "align": "center",
+                "margin": "none",
+                "contents": []
+              }
+            ]
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "flex": 0,
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "คลิกเข้าชมรีรัน",
+              "uri": "https://share.hsforms.com/1n5JMjuvmQnSirRTxnhu20Acrziq"
+            },
+            "color": "#03989EFF",
+            "height": "md",
+            "style": "primary"
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "direction": "ltr",
+      "hero": {
+        "type": "image",
+        "url": "https://glunjai.com/4-21",
+        "size": "full",
+        "aspectRatio": "1.51:1",
+        "aspectMode": "cover"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "การบ้านวันที่ 3  🥰",
+                "weight": "bold",
+                "size": "xl",
+                "color": "#469D9D",
+                "align": "center",
+                "contents": []
+              },
+              {
+                "type": "spacer",
+                "size": "xxl"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "margin": "xxl",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "margin": "xxl"
+              },
+              {
+                "type": "text",
+                "text": "ยิ้มอย่างน้อย 10 ครั้ง",
+                "margin": "xxl",
+                "contents": []
+              },
+              {
+                "type": "spacer",
+                "size": "xxl"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "margin": "sm",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "margin": "xxl"
+              },
+              {
+                "type": "text",
+                "text": "พูดเพราะอย่างน้อย 10 ครั้ง",
+                "margin": "xxl",
+                "contents": []
+              },
+              {
+                "type": "spacer",
+                "size": "xxl"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "😁😁😁😁😁",
+            "size": "xl",
+            "align": "center",
+            "gravity": "center",
+            "margin": "xxl",
+            "contents": []
+          },
+          {
+            "type": "text",
+            "text": "** ส่งการบ้านในกลุ่มไลน์",
+            "weight": "bold",
+            "size": "lg",
+            "color": "#257FA6FF",
+            "align": "center",
+            "margin": "xl",
+            "contents": []
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "horizontal",
+        "margin": "xl",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "หรือคลิกส่งที่นี่",
+              "uri": "https://glunjai.com/?fluent-form=84"
+            },
+            "color": "#03989EFF",
+            "style": "primary"
+          }
+        ]
+      }
+    }
+  ]
+}
+                
+                
+              }]
+              sendMsg(ss)
+            }            
+            
+//-------รีรัน + การบ้าน Day 2 -------//     
+           
+            bi.onclick = ()=> {
+              var ss = [{
+  "type": "flex",
+  "altText": "rerun & การบ้านวันที่ 2",
+  "contents": {
+  "type": "carousel",
+  "contents": [
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://glunjai.com/wp-content/uploads/2022/08/rerun-17.jpg",
+        "size": "full",
+        "aspectRatio": "20:13",
+        "aspectMode": "cover"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Rerun Youtube",
+            "weight": "bold",
+            "size": "xl",
+            "color": "#469D9D",
+            "contents": []
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "margin": "md",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "spacing": "sm",
+            "margin": "lg",
+            "contents": [
+              {
+                "type": "text",
+                "text": "✨ฟังทบทวนคอร์ส กลั่นใจให้เป็นสุข✨",
+                "weight": "regular",
+                "color": "#037B80",
+                "wrap": false,
+                "contents": []
+              },
+              {
+                "type": "text",
+                "text": "สามารถเข้าชมรีรันเวลาใดก็ได้ 💖",
+                "size": "md",
+                "margin": "xl",
+                "contents": []
+              },
+              {
+                "type": "separator",
+                "margin": "xxl"
+              },
+              {
+                "type": "text",
+                "text": "'นัตถิ สันติปะรัง สุขัง'",
+                "size": "lg",
+                "color": "#469D9D",
+                "align": "center",
+                "margin": "xxl",
+                "contents": []
+              },
+              {
+                "type": "text",
+                "text": "สุขอื่นยิ่งกว่าความสงบไม่มี",
+                "size": "md",
+                "align": "center",
+                "margin": "none",
+                "contents": []
+              }
+            ]
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "flex": 0,
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "คลิกเข้าชมรีรัน",
+              "uri": "https://share.hsforms.com/1n5JMjuvmQnSirRTxnhu20Acrziq"
+            },
+            "color": "#03989EFF",
+            "height": "md",
+            "style": "primary"
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "direction": "ltr",
+      "hero": {
+        "type": "image",
+        "url": "https://glunjai.com/2-35",
+        "size": "full",
+        "aspectRatio": "1.51:1",
+        "aspectMode": "cover"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "การบ้านวันที่ 2 🥰",
+                "weight": "bold",
+                "size": "xl",
+                "color": "#469D9D",
+                "align": "center",
+                "gravity": "center",
+                "contents": []
+              },
+              {
+                "type": "spacer",
+                "size": "xxl"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "margin": "xxl",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "margin": "xxl"
+              },
+              {
+                "type": "text",
+                "text": "ยิ้ม 5 ครั้ง",
+                "size": "lg",
+                "margin": "xxl",
+                "contents": []
+              },
+              {
+                "type": "spacer",
+                "size": "xxl"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "margin": "xxl"
+              },
+              {
+                "type": "text",
+                "text": "ทำสบายๆ  5 ครั้ง",
+                "size": "lg",
+                "margin": "xxl",
+                "contents": []
+              },
+              {
+                "type": "spacer",
+                "size": "xxl"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "😊 😊 😊 😊 😊 ",
+            "size": "xl",
+            "align": "center",
+            "margin": "xl",
+            "contents": []
+          },
+          {
+            "type": "text",
+            "text": "** พิมพ์ส่งการบ้านในกลุ่มไลน์",
+            "weight": "bold",
+            "size": "lg",
+            "color": "#257FA6FF",
+            "align": "center",
+            "margin": "xl",
+            "contents": []
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "หรือคลิกส่งที่นี่",
+              "uri": "https://glunjai.com/?fluent-form=83"
+            },
+            "color": "#03989EFF",
+            "style": "primary"
+          }
+        ]
+      }
+    }
+  ]
+}
+                
+                
+              }]
+              sendMsg(ss)
+            }
+                                   
+            
+//-------รีรัน + การบ้าน Day 1 -------//     
+           
+            bh.onclick = ()=> {
+              var ss = [{
+  "type": "flex",
+  "altText": "rerun & การบ้านวันที่ 1",
+  "contents": {
+  "type": "carousel",
+  "contents": [
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://glunjai.com/wp-content/uploads/2022/08/rerun-17.jpg",
+        "size": "full",
+        "aspectRatio": "20:13",
+        "aspectMode": "cover"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Rerun Youtube",
+            "weight": "bold",
+            "size": "xl",
+            "color": "#469D9D",
+            "contents": []
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "margin": "md",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "spacing": "sm",
+            "margin": "lg",
+            "contents": [
+              {
+                "type": "text",
+                "text": "✨ฟังทบทวนคอร์ส กลั่นใจให้เป็นสุข✨",
+                "weight": "regular",
+                "color": "#037B80",
+                "wrap": false,
+                "contents": []
+              },
+              {
+                "type": "text",
+                "text": "สามารถเข้าชมรีรันเวลาใดก็ได้ 💖",
+                "size": "md",
+                "margin": "xl",
+                "contents": []
+              },
+              {
+                "type": "separator",
+                "margin": "xxl"
+              },
+              {
+                "type": "text",
+                "text": "'นัตถิ สันติปะรัง สุขัง'",
+                "size": "lg",
+                "color": "#469D9D",
+                "align": "center",
+                "margin": "xxl",
+                "contents": []
+              },
+              {
+                "type": "text",
+                "text": "สุขอื่นยิ่งกว่าความสงบไม่มี",
+                "size": "md",
+                "align": "center",
+                "margin": "none",
+                "contents": []
+              }
+            ]
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "flex": 0,
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "คลิกเข้าชมรีรัน",
+              "uri": "https://share.hsforms.com/1n5JMjuvmQnSirRTxnhu20Acrziq"
+            },
+            "color": "#03989EFF",
+            "height": "md",
+            "style": "primary"
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "direction": "ltr",
+      "hero": {
+        "type": "image",
+        "url": "https://www.img.in.th/images/b5df67c2c7baff2ceea36c1b99fd52ff.png",
+        "size": "full",
+        "aspectRatio": "1.51:1",
+        "aspectMode": "cover"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "การบ้านวันที่ 1  🥰",
+                "weight": "bold",
+                "size": "xl",
+                "color": "#469D9D",
+                "align": "center",
+                "contents": []
+              },
+              {
+                "type": "spacer",
+                "size": "xxl"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "margin": "xxl",
+            "contents": [
+              {
+                "type": "spacer"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "margin": "xxl",
+                "size": "md",
+                "position": "absolute"
+              },
+              {
+                "type": "text",
+                "text": "ยิ้ม 5 ครั้ง",
+                "size": "lg",
+                "align": "start",
+                "margin": "xxl",
+                "style": "normal",
+                "position": "relative",
+                "contents": []
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "😁😁😁😁😁",
+            "size": "xxl",
+            "align": "center",
+            "margin": "xxl",
+            "contents": []
+          },
+          {
+            "type": "text",
+            "text": "** ส่งการบ้านในกลุ่มไลน์",
+            "weight": "bold",
+            "size": "lg",
+            "color": "#257FA6FF",
+            "align": "center",
+            "margin": "xl",
+            "contents": []
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "หรือคลิกส่งที่นี่",
+              "uri": "https://glunjai.com/?fluent-form=78"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+                
+              }]
+              sendMsg(ss)
+            }
+                         
+            
+  // day 7   
+           
+            bg.onclick = ()=> {
+              var ss = [{
+  "type": "flex",
+  "altText": "มาเติมสุขให้ใจ Day 7 ไปด้วยกันนะคะ",
+  "contents": {
+  "type": "carousel",
+  "contents": [
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://glunjai.com/wp-content/uploads/2022/08/7.jpg",
+        "size": "full",
+        "aspectRatio": "20:13",
+        "aspectMode": "cover"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "กลั่นใจให้เป็นสุข Day 7",
+            "weight": "bold",
+            "size": "lg",
+            "color": "#469D9D",
+            "contents": []
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "margin": "md",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "19:00 น. สวดมนต์ทำวัตรเย็น",
+                "size": "md",
+                "color": "#666666",
+                "margin": "xl",
+                "contents": []
+              },
+              {
+                "type": "text",
+                "text": "19:45 น. พิธีกรพาปรับกายปรับใจ",
+                "size": "md",
+                "color": "#666666",
+                "contents": []
+              },
+              {
+                "type": "text",
+                "text": "20:00 น. พระอาจารย์ลงแนะนำสมาธิ",
+                "size": "md",
+                "color": "#666666",
+                "contents": []
+              },
+              {
+                "type": "text",
+                "text": "เติมสุขให้ใจไปด้วยกันนะคะ 🥰",
+                "size": "md",
+                "color": "#469D9D",
+                "align": "center",
+                "margin": "xl",
+                "contents": []
+              }
+            ]
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "flex": 0,
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "Zoom",
+              "uri": "https://share.hsforms.com/1uIL8jUoPRMuyk7RmFYljTgcrziq"
+            },
+            "color": "#477FE0FF",
+            "height": "md",
+            "style": "primary"
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "Youtube ",
+              "uri": "https://share.hsforms.com/1uoZsVgtaTK6bQruZ3szk-gcrziq"
+            },
+            "color": "#E63C3C",
+            "height": "md",
+            "style": "primary"
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://glunjai.com/wp-content/uploads/2022/08/rerun-17.jpg",
+        "size": "full",
+        "aspectRatio": "20:13",
+        "aspectMode": "cover"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Rerun Youtube",
+            "weight": "bold",
+            "size": "xl",
+            "color": "#469D9D",
+            "contents": []
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "margin": "md",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "spacing": "sm",
+            "margin": "lg",
+            "contents": [
+              {
+                "type": "text",
+                "text": "✨ฟังทบทวนคอร์ส กลั่นใจให้เป็นสุข✨",
+                "weight": "regular",
+                "color": "#037B80",
+                "wrap": false,
+                "contents": []
+              },
+              {
+                "type": "text",
+                "text": "สามารถเข้าชมรีรันเวลาใดก็ได้ 💖",
+                "size": "md",
+                "margin": "xl",
+                "contents": []
+              },
+              {
+                "type": "separator",
+                "margin": "xxl"
+              },
+              {
+                "type": "text",
+                "text": "'นัตถิ สันติปะรัง สุขัง'",
+                "size": "lg",
+                "color": "#469D9D",
+                "align": "center",
+                "margin": "xxl",
+                "contents": []
+              },
+              {
+                "type": "text",
+                "text": "สุขอื่นยิ่งกว่าความสงบไม่มี",
+                "size": "md",
+                "align": "center",
+                "margin": "none",
+                "contents": []
+              }
+            ]
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "flex": 0,
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "คลิกเข้าชมรีรัน",
+              "uri": "https://share.hsforms.com/1n5JMjuvmQnSirRTxnhu20Acrziq"
+            },
+            "color": "#03989EFF",
+            "height": "md",
+            "style": "primary"
+          }
+        ]
+      }
+    }
+  ]
+}
+                
+              }]
+              sendMsg(ss)
+            }           
+              
+
+// day 6  
+           
+            bf.onclick = ()=> {
+              var ss = [{
+  "type": "flex",
+  "altText": "มาเติมสุขให้ใจ Day 6 ไปด้วยกันนะคะ",
+  "contents": {
+  "type": "carousel",
+  "contents": [
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://glunjai.com/wp-content/uploads/2022/08/6.jpg",
+        "size": "full",
+        "aspectRatio": "20:13",
+        "aspectMode": "cover"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "กลั่นใจให้เป็นสุข Day 6",
+            "weight": "bold",
+            "size": "lg",
+            "color": "#469D9D",
+            "contents": []
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "margin": "md",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "19:00 น. สวดมนต์ทำวัตรเย็น",
+                "size": "md",
+                "color": "#666666",
+                "margin": "xl",
+                "contents": []
+              },
+              {
+                "type": "text",
+                "text": "19:45 น. พิธีกรพาปรับกายปรับใจ",
+                "size": "md",
+                "color": "#666666",
+                "contents": []
+              },
+              {
+                "type": "text",
+                "text": "20:00 น. พระอาจารย์ลงแนะนำสมาธิ",
+                "size": "md",
+                "color": "#666666",
+                "contents": []
+              },
+              {
+                "type": "text",
+                "text": "เติมสุขให้ใจไปด้วยกันนะคะ 🥰",
+                "size": "md",
+                "color": "#469D9D",
+                "align": "center",
+                "margin": "xl",
+                "contents": []
+              }
+            ]
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "flex": 0,
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "Zoom",
+              "uri": "https://share.hsforms.com/1uIL8jUoPRMuyk7RmFYljTgcrziq"
+            },
+            "color": "#477FE0FF",
+            "height": "md",
+            "style": "primary"
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "Youtube ",
+              "uri": "https://share.hsforms.com/1uoZsVgtaTK6bQruZ3szk-gcrziq"
+            },
+            "color": "#E63C3C",
+            "height": "md",
+            "style": "primary"
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://glunjai.com/wp-content/uploads/2022/08/rerun-17.jpg",
+        "size": "full",
+        "aspectRatio": "20:13",
+        "aspectMode": "cover"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Rerun Youtube",
+            "weight": "bold",
+            "size": "xl",
+            "color": "#469D9D",
+            "contents": []
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "margin": "md",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "spacing": "sm",
+            "margin": "lg",
+            "contents": [
+              {
+                "type": "text",
+                "text": "✨ฟังทบทวนคอร์ส กลั่นใจให้เป็นสุข✨",
+                "weight": "regular",
+                "color": "#037B80",
+                "wrap": false,
+                "contents": []
+              },
+              {
+                "type": "text",
+                "text": "สามารถเข้าชมรีรันเวลาใดก็ได้ 💖",
+                "size": "md",
+                "margin": "xl",
+                "contents": []
+              },
+              {
+                "type": "separator",
+                "margin": "xxl"
+              },
+              {
+                "type": "text",
+                "text": "'นัตถิ สันติปะรัง สุขัง'",
+                "size": "lg",
+                "color": "#469D9D",
+                "align": "center",
+                "margin": "xxl",
+                "contents": []
+              },
+              {
+                "type": "text",
+                "text": "สุขอื่นยิ่งกว่าความสงบไม่มี",
+                "size": "md",
+                "align": "center",
+                "margin": "none",
+                "contents": []
+              }
+            ]
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "flex": 0,
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "คลิกเข้าชมรีรัน",
+              "uri": "https://share.hsforms.com/1n5JMjuvmQnSirRTxnhu20Acrziq"
+            },
+            "color": "#03989EFF",
+            "height": "md",
+            "style": "primary"
+          }
+        ]
+      }
+    }
+  ]
+}
+                
+              }]
+              sendMsg(ss)
+            }           
+  
+            
+// day 5   
+           
+            be.onclick = ()=> {
+              var ss = [{
+  "type": "flex",
+  "altText": "มาเติมสุขให้ใจ Day 5 ไปด้วยกันนะคะ",
+  "contents": {
+  "type": "carousel",
+  "contents": [
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://glunjai.com/wp-content/uploads/2022/08/5.jpg",
+        "size": "full",
+        "aspectRatio": "20:13",
+        "aspectMode": "cover"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "กลั่นใจให้เป็นสุข Day 5",
+            "weight": "bold",
+            "size": "lg",
+            "color": "#469D9D",
+            "contents": []
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "margin": "md",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "19:00 น. สวดมนต์ทำวัตรเย็น",
+                "size": "md",
+                "color": "#666666",
+                "margin": "xl",
+                "contents": []
+              },
+              {
+                "type": "text",
+                "text": "19:45 น. พิธีกรพาปรับกายปรับใจ",
+                "size": "md",
+                "color": "#666666",
+                "contents": []
+              },
+              {
+                "type": "text",
+                "text": "20:00 น. พระอาจารย์ลงแนะนำสมาธิ",
+                "size": "md",
+                "color": "#666666",
+                "contents": []
+              },
+              {
+                "type": "text",
+                "text": "เติมสุขให้ใจไปด้วยกันนะคะ 🥰",
+                "size": "md",
+                "color": "#469D9D",
+                "align": "center",
+                "margin": "xl",
+                "contents": []
+              }
+            ]
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "flex": 0,
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "Zoom",
+              "uri": "https://share.hsforms.com/1uIL8jUoPRMuyk7RmFYljTgcrziq"
+            },
+            "color": "#477FE0FF",
+            "height": "md",
+            "style": "primary"
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "Youtube ",
+              "uri": "https://share.hsforms.com/1uoZsVgtaTK6bQruZ3szk-gcrziq"
+            },
+            "color": "#E63C3C",
+            "height": "md",
+            "style": "primary"
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://glunjai.com/wp-content/uploads/2022/08/rerun-17.jpg",
+        "size": "full",
+        "aspectRatio": "20:13",
+        "aspectMode": "cover"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Rerun Youtube",
+            "weight": "bold",
+            "size": "xl",
+            "color": "#469D9D",
+            "contents": []
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "margin": "md",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "spacing": "sm",
+            "margin": "lg",
+            "contents": [
+              {
+                "type": "text",
+                "text": "✨ฟังทบทวนคอร์ส กลั่นใจให้เป็นสุข✨",
+                "weight": "regular",
+                "color": "#037B80",
+                "wrap": false,
+                "contents": []
+              },
+              {
+                "type": "text",
+                "text": "สามารถเข้าชมรีรันเวลาใดก็ได้ 💖",
+                "size": "md",
+                "margin": "xl",
+                "contents": []
+              },
+              {
+                "type": "separator",
+                "margin": "xxl"
+              },
+              {
+                "type": "text",
+                "text": "'นัตถิ สันติปะรัง สุขัง'",
+                "size": "lg",
+                "color": "#469D9D",
+                "align": "center",
+                "margin": "xxl",
+                "contents": []
+              },
+              {
+                "type": "text",
+                "text": "สุขอื่นยิ่งกว่าความสงบไม่มี",
+                "size": "md",
+                "align": "center",
+                "margin": "none",
+                "contents": []
+              }
+            ]
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "flex": 0,
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "คลิกเข้าชมรีรัน",
+              "uri": "https://share.hsforms.com/1n5JMjuvmQnSirRTxnhu20Acrziq"
+            },
+            "color": "#03989EFF",
+            "height": "md",
+            "style": "primary"
+          }
+        ]
+      }
+    }
+  ]
+}
+                
+              }]
+              sendMsg(ss)
+            }           
+              
+                        
+  // day 4   
+           
+            bd.onclick = ()=> {
+              var ss = [{
+  "type": "flex",
+  "altText": "มาเติมสุขให้ใจ Day 4 ไปด้วยกันนะคะ",
+  "contents": {
+  "type": "carousel",
+  "contents": [
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://glunjai.com/wp-content/uploads/2022/08/4.jpg",
+        "size": "full",
+        "aspectRatio": "20:13",
+        "aspectMode": "cover"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "กลั่นใจให้เป็นสุข Day 4",
+            "weight": "bold",
+            "size": "lg",
+            "color": "#469D9D",
+            "contents": []
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "margin": "md",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "19:00 น. สวดมนต์ทำวัตรเย็น",
+                "size": "md",
+                "color": "#666666",
+                "margin": "xl",
+                "contents": []
+              },
+              {
+                "type": "text",
+                "text": "19:45 น. พิธีกรพาปรับกายปรับใจ",
+                "size": "md",
+                "color": "#666666",
+                "contents": []
+              },
+              {
+                "type": "text",
+                "text": "20:00 น. พระอาจารย์ลงแนะนำสมาธิ",
+                "size": "md",
+                "color": "#666666",
+                "contents": []
+              },
+              {
+                "type": "text",
+                "text": "เติมสุขให้ใจไปด้วยกันนะคะ 🥰",
+                "size": "md",
+                "color": "#469D9D",
+                "align": "center",
+                "margin": "xl",
+                "contents": []
+              }
+            ]
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "flex": 0,
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "Zoom",
+              "uri": "https://share.hsforms.com/1uIL8jUoPRMuyk7RmFYljTgcrziq"
+            },
+            "color": "#477FE0FF",
+            "height": "md",
+            "style": "primary"
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "Youtube ",
+              "uri": "https://share.hsforms.com/1uoZsVgtaTK6bQruZ3szk-gcrziq"
+            },
+            "color": "#E63C3C",
+            "height": "md",
+            "style": "primary"
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://glunjai.com/wp-content/uploads/2022/08/rerun-17.jpg",
+        "size": "full",
+        "aspectRatio": "20:13",
+        "aspectMode": "cover"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Rerun Youtube",
+            "weight": "bold",
+            "size": "xl",
+            "color": "#469D9D",
+            "contents": []
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "margin": "md",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "spacing": "sm",
+            "margin": "lg",
+            "contents": [
+              {
+                "type": "text",
+                "text": "✨ฟังทบทวนคอร์ส กลั่นใจให้เป็นสุข✨",
+                "weight": "regular",
+                "color": "#037B80",
+                "wrap": false,
+                "contents": []
+              },
+              {
+                "type": "text",
+                "text": "สามารถเข้าชมรีรันเวลาใดก็ได้ 💖",
+                "size": "md",
+                "margin": "xl",
+                "contents": []
+              },
+              {
+                "type": "separator",
+                "margin": "xxl"
+              },
+              {
+                "type": "text",
+                "text": "'นัตถิ สันติปะรัง สุขัง'",
+                "size": "lg",
+                "color": "#469D9D",
+                "align": "center",
+                "margin": "xxl",
+                "contents": []
+              },
+              {
+                "type": "text",
+                "text": "สุขอื่นยิ่งกว่าความสงบไม่มี",
+                "size": "md",
+                "align": "center",
+                "margin": "none",
+                "contents": []
+              }
+            ]
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "flex": 0,
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "คลิกเข้าชมรีรัน",
+              "uri": "https://share.hsforms.com/1n5JMjuvmQnSirRTxnhu20Acrziq"
+            },
+            "color": "#03989EFF",
+            "height": "md",
+            "style": "primary"
+          }
+        ]
+      }
+    }
+  ]
+}
+                
+              }]
+              sendMsg(ss)
+            }           
+                       
+            
+ // day 3   
+           
+            bc.onclick = ()=> {
+              var ss = [{
+  "type": "flex",
+  "altText": "มาเติมสุขให้ใจ Day 3 ไปด้วยกันนะคะ",
+  "contents": {
+  "type": "carousel",
+  "contents": [
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://glunjai.com/wp-content/uploads/2022/08/3.jpg",
+        "size": "full",
+        "aspectRatio": "20:13",
+        "aspectMode": "cover"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "กลั่นใจให้เป็นสุข Day 3",
+            "weight": "bold",
+            "size": "lg",
+            "color": "#469D9D",
+            "contents": []
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "margin": "md",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "19:00 น. สวดมนต์ทำวัตรเย็น",
+                "size": "md",
+                "color": "#666666",
+                "margin": "xl",
+                "contents": []
+              },
+              {
+                "type": "text",
+                "text": "19:45 น. พิธีกรพาปรับกายปรับใจ",
+                "size": "md",
+                "color": "#666666",
+                "contents": []
+              },
+              {
+                "type": "text",
+                "text": "20:00 น. พระอาจารย์ลงแนะนำสมาธิ",
+                "size": "md",
+                "color": "#666666",
+                "contents": []
+              },
+              {
+                "type": "text",
+                "text": "เติมสุขให้ใจไปด้วยกันนะคะ 🥰",
+                "size": "md",
+                "color": "#469D9D",
+                "align": "center",
+                "margin": "xl",
+                "contents": []
+              }
+            ]
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "flex": 0,
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "Zoom",
+              "uri": "https://share.hsforms.com/1uIL8jUoPRMuyk7RmFYljTgcrziq"
+            },
+            "color": "#477FE0FF",
+            "height": "md",
+            "style": "primary"
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "Youtube ",
+              "uri": "https://share.hsforms.com/1uoZsVgtaTK6bQruZ3szk-gcrziq"
+            },
+            "color": "#E63C3C",
+            "height": "md",
+            "style": "primary"
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://glunjai.com/wp-content/uploads/2022/08/rerun-17.jpg",
+        "size": "full",
+        "aspectRatio": "20:13",
+        "aspectMode": "cover"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Rerun Youtube",
+            "weight": "bold",
+            "size": "xl",
+            "color": "#469D9D",
+            "contents": []
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "margin": "md",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "spacing": "sm",
+            "margin": "lg",
+            "contents": [
+              {
+                "type": "text",
+                "text": "✨ฟังทบทวนคอร์ส กลั่นใจให้เป็นสุข✨",
+                "weight": "regular",
+                "color": "#037B80",
+                "wrap": false,
+                "contents": []
+              },
+              {
+                "type": "text",
+                "text": "สามารถเข้าชมรีรันเวลาใดก็ได้ 💖",
+                "size": "md",
+                "margin": "xl",
+                "contents": []
+              },
+              {
+                "type": "separator",
+                "margin": "xxl"
+              },
+              {
+                "type": "text",
+                "text": "'นัตถิ สันติปะรัง สุขัง'",
+                "size": "lg",
+                "color": "#469D9D",
+                "align": "center",
+                "margin": "xxl",
+                "contents": []
+              },
+              {
+                "type": "text",
+                "text": "สุขอื่นยิ่งกว่าความสงบไม่มี",
+                "size": "md",
+                "align": "center",
+                "margin": "none",
+                "contents": []
+              }
+            ]
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "flex": 0,
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "คลิกเข้าชมรีรัน",
+              "uri": "https://share.hsforms.com/1n5JMjuvmQnSirRTxnhu20Acrziq"
+            },
+            "color": "#03989EFF",
+            "height": "md",
+            "style": "primary"
+          }
+        ]
+      }
+    }
+  ]
+}
+                
+              }]
+              sendMsg(ss)
+            }           
+                            
+            
+// Day 2    
+           
+            bb.onclick = ()=> {
+              var ss = [{
+  "type": "flex",
+  "altText": "มาเติมสุขให้ใจ Day 2 ไปด้วยกันนะคะ",
+  "contents": {
+  "type": "carousel",
+  "contents": [
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://glunjai.com/wp-content/uploads/2022/08/2.jpg",
+        "size": "full",
+        "aspectRatio": "20:13",
+        "aspectMode": "cover"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "กลั่นใจให้เป็นสุข Day 2",
+            "weight": "bold",
+            "size": "lg",
+            "color": "#469D9D",
+            "contents": []
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "margin": "md",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "19:00 น. สวดมนต์ทำวัตรเย็น",
+                "size": "md",
+                "color": "#666666",
+                "margin": "xl",
+                "contents": []
+              },
+              {
+                "type": "text",
+                "text": "19:45 น. พิธีกรพาปรับกายปรับใจ",
+                "size": "md",
+                "color": "#666666",
+                "contents": []
+              },
+              {
+                "type": "text",
+                "text": "20:00 น. พระอาจารย์ลงแนะนำสมาธิ",
+                "size": "md",
+                "color": "#666666",
+                "contents": []
+              },
+              {
+                "type": "text",
+                "text": "เติมสุขให้ใจไปด้วยกันนะคะ 🥰",
+                "size": "md",
+                "color": "#469D9D",
+                "align": "center",
+                "margin": "xl",
+                "contents": []
+              }
+            ]
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "flex": 0,
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "Zoom",
+              "uri": "https://share.hsforms.com/1uIL8jUoPRMuyk7RmFYljTgcrziq"
+            },
+            "color": "#477FE0FF",
+            "height": "md",
+            "style": "primary"
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "Youtube ",
+              "uri": "https://share.hsforms.com/1uoZsVgtaTK6bQruZ3szk-gcrziq"
+            },
+            "color": "#E63C3C",
+            "height": "md",
+            "style": "primary"
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://glunjai.com/wp-content/uploads/2022/08/rerun-17.jpg",
+        "size": "full",
+        "aspectRatio": "20:13",
+        "aspectMode": "cover"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Rerun Youtube",
+            "weight": "bold",
+            "size": "xl",
+            "color": "#469D9D",
+            "contents": []
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "margin": "md",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              },
+              {
+                "type": "icon",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                "size": "sm"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "spacing": "sm",
+            "margin": "lg",
+            "contents": [
+              {
+                "type": "text",
+                "text": "✨ฟังทบทวนคอร์ส กลั่นใจให้เป็นสุข✨",
+                "weight": "regular",
+                "color": "#037B80",
+                "wrap": false,
+                "contents": []
+              },
+              {
+                "type": "text",
+                "text": "สามารถเข้าชมรีรันเวลาใดก็ได้ 💖",
+                "size": "md",
+                "margin": "xl",
+                "contents": []
+              },
+              {
+                "type": "separator",
+                "margin": "xxl"
+              },
+              {
+                "type": "text",
+                "text": "'นัตถิ สันติปะรัง สุขัง'",
+                "size": "lg",
+                "color": "#469D9D",
+                "align": "center",
+                "margin": "xxl",
+                "contents": []
+              },
+              {
+                "type": "text",
+                "text": "สุขอื่นยิ่งกว่าความสงบไม่มี",
+                "size": "md",
+                "align": "center",
+                "margin": "none",
+                "contents": []
+              }
+            ]
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "flex": 0,
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "คลิกเข้าชมรีรัน",
+              "uri": "https://share.hsforms.com/1n5JMjuvmQnSirRTxnhu20Acrziq"
+            },
+            "color": "#03989EFF",
+            "height": "md",
+            "style": "primary"
+          }
+        ]
+      }
+    }
+  ]
+}
+                
+              }]
+              sendMsg(ss)
+            }
+                                 
+            
+  // Day 1      
+           
+            ba.onclick = ()=> {
+              var ss = [{
+  "type": "flex",
+  "altText": "มาเติมสุขให้ใจ Day 1 ไปด้วยกันนะคะ",
+  "contents": {
   "type": "bubble",
   "hero": {
     "type": "image",
-    "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_1_cafe.png",
+    "url": "https://glunjai.com/wp-content/uploads/2022/08/1.jpg",
     "size": "full",
     "aspectRatio": "20:13",
-    "aspectMode": "cover",
-    "action": {
-      "type": "uri",
-      "uri": "http://linecorp.com/"
-    }
+    "aspectMode": "cover"
   },
-  "footer": {
+  "body": {
     "type": "box",
     "layout": "vertical",
-    "spacing": "sm",
     "contents": [
       {
-        "type": "button",
-        "style": "link",
-        "height": "sm",
-        "action": {
-          "type": "uri",
-          "label": "Share",
-          "uri": "https://glunjai.github.io/share"
-        }
+        "type": "text",
+        "text": "กลั่นใจให้เป็นสุข Day 1",
+        "weight": "bold",
+        "size": "lg",
+        "color": "#469D9D",
+        "contents": []
+      },
+      {
+        "type": "box",
+        "layout": "baseline",
+        "margin": "md",
+        "contents": [
+          {
+            "type": "icon",
+            "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+            "size": "sm"
+          },
+          {
+            "type": "icon",
+            "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+            "size": "sm"
+          },
+          {
+            "type": "icon",
+            "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+            "size": "sm"
+          },
+          {
+            "type": "icon",
+            "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+            "size": "sm"
+          },
+          {
+            "type": "icon",
+            "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+            "size": "sm"
+          }
+        ]
       },
       {
         "type": "box",
         "layout": "vertical",
-        "contents": [],
-        "margin": "sm"
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "text",
+            "text": "19:20 น. ปฐมนิเทศ",
+            "size": "md",
+            "color": "#666666",
+            "margin": "xl",
+            "contents": []
+          },
+          {
+            "type": "text",
+            "text": "20:00 น. พระอาจารย์ลงแนะนำสมาธิ",
+            "size": "md",
+            "color": "#666666",
+            "contents": []
+          },
+          {
+            "type": "text",
+            "text": "เติมสุขให้ใจไปด้วยกันนะคะ 🥰",
+            "size": "md",
+            "color": "#469D9D",
+            "align": "center",
+            "margin": "xl",
+            "contents": []
+          }
+        ]
       }
-    ],
-    "flex": 0
+    ]
+  },
+  "footer": {
+    "type": "box",
+    "layout": "vertical",
+    "flex": 0,
+    "spacing": "sm",
+    "contents": [
+      {
+        "type": "button",
+        "action": {
+          "type": "uri",
+          "label": "Zoom",
+          "uri": "https://share.hsforms.com/1uIL8jUoPRMuyk7RmFYljTgcrziq"
+        },
+        "color": "#477FE0FF",
+        "height": "md",
+        "style": "primary"
+      },
+      {
+        "type": "button",
+        "action": {
+          "type": "uri",
+          "label": "Youtube ",
+          "uri": "https://share.hsforms.com/1uoZsVgtaTK6bQruZ3szk-gcrziq"
+        },
+        "color": "#E63C3C",
+        "height": "md",
+        "style": "primary"
+      }
+    ]
   }
 }
-        }
-    ])
-    liff.closeWindow()
+                
+              }]
+              sendMsg(ss)
+            }
+  
+            
+
+// การ์ดแนะนำวันเข้าคอร์ส       
+           
+            cc.onclick = ()=> {
+              var ss = [{
+  "type": "flex",
+  "altText": "เติมสุขให้ใจทุกวัน เติมวันละนิดจิตแจ่มใส",
+  "contents": {
+  "type": "carousel",
+  "contents": [
+    {
+      "type": "bubble",
+      "direction": "ltr",
+      "hero": {
+        "type": "image",
+        "url": "https://www.img.in.th/images/f4f7f9fbc33a76ab8126b0fae9b39dc5.png",
+        "align": "center",
+        "size": "full",
+        "aspectRatio": "20:13",
+        "aspectMode": "cover"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "ส่งคำถามถึงพระอาจารย์",
+            "size": "xl",
+            "align": "center",
+            "contents": []
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "คลิกส่งคำถาม",
+              "uri": "https://docs.google.com/forms/d/e/1FAIpQLSeigCd9a-tmevfpy8an3X5-cy9KO7AEZI_U7ti2JpnO41OjIQ/viewform"
+            },
+            "color": "#03989E",
+            "style": "primary"
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "direction": "ltr",
+      "hero": {
+        "type": "image",
+        "url": "https://www.img.in.th/images/5aa0e033b693ec2217a71431b3a4f271.png",
+        "size": "full",
+        "aspectRatio": "1.51:1",
+        "aspectMode": "cover"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "เพลงบรรเลง สบายๆ",
+            "size": "xl",
+            "align": "center",
+            "contents": []
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "คลิกฟังเพลง",
+              "uri": "https://youtube.com/playlist?list=PLpJhC4ka29h8WLbJPOCnLP71OJ_htGuxQ"
+            },
+            "color": "#03989E",
+            "style": "primary"
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "direction": "ltr",
+      "hero": {
+        "type": "image",
+        "url": "https://www.img.in.th/images/68daaa3e80bca47ccd61f3fd090fac7d.png",
+        "size": "full",
+        "aspectRatio": "1.51:1",
+        "aspectMode": "cover"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "เพลงธรรมะ เพลงสมาธิ",
+            "size": "xl",
+            "align": "center",
+            "contents": []
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "คลิกฟังเพลง",
+              "uri": "https://youtube.com/playlist?list=PLpJhC4ka29h-__WULXsfLu2Bkbt8GXbrc"
+            },
+            "color": "#03989E",
+            "style": "primary"
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "direction": "ltr",
+      "hero": {
+        "type": "image",
+        "url": "https://glunjai.com/screen-shot-2565-07-01-at-22-44-01/",
+        "size": "full",
+        "aspectRatio": "1.51:1",
+        "aspectMode": "cover"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "โยคะ ยืดเส้น ",
+            "size": "lg",
+            "align": "center",
+            "contents": []
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "คลิกยืดเส้น",
+              "uri": "https://www.youtube.com/watch?v=vlFKK_XVDvM"
+            },
+            "color": "#03989E",
+            "style": "primary"
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "direction": "ltr",
+      "hero": {
+        "type": "image",
+        "url": "https://glunjai.com/wp-content/uploads/2022/07/%E0%B8%9B%E0%B8%81-Flix-Line.jpg",
+        "size": "full",
+        "aspectRatio": "1.51:1",
+        "aspectMode": "cover"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Podcast เกี่ยวกับสมาธิ ดีๆ",
+            "size": "xl",
+            "align": "center",
+            "contents": []
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "คลิกฟังที่นี่",
+              "uri": "https://youtube.com/playlist?list=PLpJhC4ka29h8AKkvINB83Vx_pc8soa7Qx"
+            },
+            "color": "#03989E",
+            "style": "primary"
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "direction": "ltr",
+      "hero": {
+        "type": "image",
+        "url": "https://glunjai.com/6-15/",
+        "size": "full",
+        "aspectRatio": "1.51:1",
+        "aspectMode": "cover"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "ติดต่อแอดมิน",
+                "size": "xl",
+                "align": "center",
+                "contents": []
+              }
+            ]
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "ติดต่อ Admin Line OA",
+              "uri": "https://lin.ee/8xWjISS"
+            },
+            "color": "#03989E",
+            "style": "primary"
+          }
+        ]
+      }
+    }
+  ]
 }
-main()
-</script>
-</body>
-</html>
+                
+              }]
+              sendMsg(ss)
+            }
+
+
+///////////////////////////////////           
+            
+          } else {
+            liff.login()
+          }
+          
+        })
+        
+      })
+    }
+      
+      function sendMsg(flex){
+        liff.sendMessages(flex).then(function(){
+          liff.closeWindow();
+        })
+      }
+      
+    </script>
+    <script charset="utf-8" src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
